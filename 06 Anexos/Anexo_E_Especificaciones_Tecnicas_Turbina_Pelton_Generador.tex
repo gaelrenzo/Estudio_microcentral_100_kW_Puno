@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\definecolor{navyblue}{RGB}{31,78,121}
+\definecolor{darkslate}{RGB}{47,85,151}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\textcolor{darkslate}{MCH Río Blanco 100 kW - Puno}}
+\lhead{\small\textcolor{darkslate}{Expediente Técnico de Ingeniería}}
+\rfoot{\small Página \thepage}
+\lfoot{\small 2024}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries\textcolor{navyblue}{ANEXO E: ESPECIFICACIONES TÉCNICAS DE EQUIPAMIENTO}}\\[0.6em]
+    {\large\bfseries Turbomaquinaria, Alternador Síncrono, Tableros y Protecciones Eléctricas}\\[1.2em]
+    \rule{\linewidth}{1.2pt}
+\end{center}
+
+
+\section*{1. Ficha de Suministro: Turbina Pelton}
+\begin{itemize}
+    \item \textbf{Tipo:} Pelton de flujo libre con eje horizontal.
+    \item \textbf{Número de Toberas / Inyectores:} 2 inyectores con agujas regulables y deflectores de chorro servocomandados.
+    \item \textbf{Caudal Nominal:} $125\text{ L/s}$ ($0.125\text{ m}^3/\text{s}$).
+    \item \textbf{Caída Neta Nominal:} $106.18\text{ m}$.
+    \item \textbf{Potencia Mecánica Garantizada:} $114.5\text{ kW}$.
+    \item \textbf{Velocidad de Rotación:} $1200\text{ RPM}$ acoplado directo al generador.
+    \item \textbf{Material del Rodete:} Bloque monobloque maquinado CNC o fundido en acero inoxidable martensítico ASTM A743 Grado CA6NM (13\% Cr - 4\% Ni).
+    \item \textbf{Carcasa y Distribuidor:} Acero soldado ASTM A36 con recubrimiento epóxico de alta resistencia a la cavitación y abrasión.
+\end{itemize}
+
+\section*{2. Ficha de Suministro: Generador Síncrono Trifásico}
+\begin{itemize}
+    \item \textbf{Potencia Aparente Nominal:} $125\text{ kVA}$.
+    \item \textbf{Potencia Activa Nominal:} $100 - 106.5\text{ kW}$ con $\cos\varphi = 0.80 - 0.85$.
+    \item \textbf{Tensión Nominal:} $400 / 230\text{ V}$ trifásico, 4 hilos (estrella con neutro accesible).
+    \item \textbf{Frecuencia:} $60\text{ Hz}$.
+    \item \textbf{Número de Polos:} 6 polos ($N = 120 \times 60 / 6 = 1200\text{ RPM}$).
+    \item \textbf{Sistema de Excitación:} Brushless (sin escobillas) con puente rectificador giratorio y regulador automático de voltaje (AVR) digital $\pm 1.0\%$.
+    \item \textbf{Clase de Aislamiento:} Clase H con elevación de temperatura Clase F.
+    \item \textbf{Grado de Protección:} IP23 para servicio interior en casa de máquinas con filtros de aire.
+\end{itemize}
+
+
+\end{document}

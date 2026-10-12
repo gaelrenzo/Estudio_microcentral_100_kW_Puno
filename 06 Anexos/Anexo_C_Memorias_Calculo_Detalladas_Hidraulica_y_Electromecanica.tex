@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\definecolor{navyblue}{RGB}{31,78,121}
+\definecolor{darkslate}{RGB}{47,85,151}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small\textcolor{darkslate}{MCH Río Blanco 100 kW - Puno}}
+\lhead{\small\textcolor{darkslate}{Expediente Técnico de Ingeniería}}
+\rfoot{\small Página \thepage}
+\lfoot{\small 2024}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries\textcolor{navyblue}{ANEXO C: MEMORIAS DE CÁLCULO DETALLADAS}}\\[0.6em]
+    {\large\bfseries Ecuaciones Hidráulicas, Transitorios y Selección de Equipamiento}\\[1.2em]
+    \rule{\linewidth}{1.2pt}
+\end{center}
+
+
+\section*{1. Formulación Hidráulica Aplicada}
+\subsection*{1.1 Conducción a Superficie Libre (Ecuación de Manning)}
+La capacidad del canal rectangular se verifica mediante:
+\begin{equation}
+Q = \frac{1}{n} A R_h^{2/3} S_0^{1/2}
+\end{equation}
+Para $b = 0.50\text{ m}$, $y = 0.331\text{ m}$, $n = 0.014$, y $S_0 = 0.0015$:
+\begin{equation}
+A = 0.1655\text{ m}^2, \quad P = 1.162\text{ m}, \quad R_h = 0.1424\text{ m} \implies Q = 0.125\text{ m}^3/\text{s}
+\end{equation}
+
+\subsection*{1.2 Pérdidas en Conducción a Presión (Darcy-Weisbach)}
+\begin{equation}
+h_f = f \frac{L}{D} \frac{v^2}{2g} = 0.0153 \times \frac{380}{0.250} \times \frac{2.546^2}{2 \times 9.81} = 7.67\text{ m}
+\end{equation}
+Añadiendo pérdidas localizadas ($\Sigma K = 1.85 \implies h_m = 1.15\text{ m}$), la pérdida total es $h_{total} = 8.82\text{ m}$, resultando una caída neta de $H_n = 106.18\text{ m}$.
+
+\subsection*{1.3 Ecuación de Golpe de Ariete de Allievi}
+Con celeridad $a = 1195.8\text{ m/s}$ y tiempo de cierre $T_c = 4.0\text{ s}$:
+\begin{equation}
+\Delta H = \frac{2 L v}{g T_c} = \frac{2 \times 380 \times 2.546}{9.81 \times 4.0} = 49.32\text{ m.c.a.}
+\end{equation}
+Presión de diseño: $P_{max} = H_b + \Delta H = 115.0 + 49.32 = 164.32\text{ m.c.a.} = 16.11\text{ bar}$.
+
+\subsection*{1.4 Ecuación Fundamental de Turbinas Pelton}
+Potencia mecánica entregada por el rodete:
+\begin{equation}
+P_m = \rho g Q H_n \eta_t = 1000 \times 9.81 \times 0.125 \times 106.18 \times 0.88 = 114.57\text{ kW}
+\end{equation}
+Potencia activa en bornes del generador ($\eta_g = 0.93$):
+\begin{equation}
+P_e = P_m \times \eta_g = 114.57 \times 0.93 = 106.55\text{ kW} \implies P_{red} = 104.4\text{ kW}
+\end{equation}
+
+
+\end{document}

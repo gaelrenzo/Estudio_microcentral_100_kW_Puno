@@ -1,0 +1,10 @@
+ID,Elemento,Este_UTM,Norte_UTM,Cota_msnm,Zona,Descripcion
+BOC-01,Bocatoma Tirolesa con Azud,340915.2,8472980.5,2420.0,19S,Captacion de fondo en cauce del Rio Blanco con rejilla de 1.80m y camara de derivacion
+DES-01,Desarenador de Doble Nave,340940.8,8473020.1,2418.5,19S,Estructura de sedimentacion de particulas d >= 0.20 mm con vertedero Sutro y purga
+CAN-INI,Inicio Canal de Aduccion,340960.0,8473045.0,2418.4,19S,"Canal rectangular de concreto cicleo f c=175 kg/cm2, b=0.50m, h=0.60m"
+CAN-MED,Canal de Aduccion Progresiva 0+225,341100.4,8473180.2,2418.05,19S,Trazo a media ladera en roca fracturada con proteccion contra desprendimientos
+CAM-CAR,Camara de Carga y Aliviadero,341250.5,8473310.8,2417.8,19S,"Estructura de transicion con rejilla fina, compuerta de admision, aliviadero y tubo de ventilacion"
+TUB-FOR,Eje Tuberia Forzada (Penstock),341365.0,8473480.0,2360.3,19S,"Tuberia de acero al carbono ASTM A36 e=4.75mm a 6.35mm, D=250mm, Longitud 380m con 4 dados de anclaje"
+CAS-MAQ,Casa de Maquinas,341480.1,8473650.4,2302.8,19S,Edificacion antisismica 8.5m x 6.0m albergando grupo turbina Pelton de 2 inyectores y generador 125 kVA
+SUB-EST,Subestacion Elevadora 0.38/10 kV,341495.0,8473665.0,2303.0,19S,"Transformador trifasico 125 kVA ONAN, seccionadores bajo carga y pararrayos polimericos"
+DES-RES,Canal de Descarga y Restitucion,341510.3,8473675.8,2301.5,19S,Restitucion de caudales turbinados al cauce natural del Rio Blanco sin desvio perenne

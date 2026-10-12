@@ -1,0 +1,67 @@
+{
+  "proyecto": "Microcentral Hidroelectrica Rio Blanco 100 kW - Puno",
+  "sistema_referencia": "WGS 84 / UTM Zona 19S (EPSG:32719)",
+  "cuenca_hidrografica": "Cuenca del Rio Inambari - Subcuenca Rio San Gaban",
+  "estaciones_analizadas": [
+    {
+      "codigo": "SEN-108034",
+      "nombre": "Ollachea",
+      "entidad": "SENAMHI",
+      "tipo": "Convencional Meteorologica",
+      "lat": -13.791,
+      "lon": -70.473,
+      "altitud_msnm": 2750,
+      "variable": "Precipitacion diaria, Temperatura"
+    },
+    {
+      "codigo": "SEN-108035",
+      "nombre": "San Gaban",
+      "entidad": "SENAMHI / EGASA",
+      "tipo": "Automatica Hidrometeorologica",
+      "lat": -13.435,
+      "lon": -70.405,
+      "altitud_msnm": 640,
+      "variable": "Precipitacion, Caudal, Humedad"
+    },
+    {
+      "codigo": "SEN-108031",
+      "nombre": "Macusani",
+      "entidad": "SENAMHI",
+      "tipo": "Climatologica Principal",
+      "lat": -14.067,
+      "lon": -70.433,
+      "altitud_msnm": 4325,
+      "variable": "Precipitacion, Temperatura, Viento"
+    },
+    {
+      "codigo": "SEN-108040",
+      "nombre": "Phara",
+      "entidad": "SENAMHI",
+      "tipo": "Convencional Meteorologica",
+      "lat": -14.043,
+      "lon": -69.645,
+      "altitud_msnm": 3350,
+      "variable": "Precipitacion mensual, Caudales"
+    },
+    {
+      "codigo": "ANA-INAM-04",
+      "nombre": "Puente Ollachea (Rio San Gaban)",
+      "entidad": "ANA - AAA XIV Titicaca / ALA Ramis-Inambari",
+      "tipo": "Hidrometrica con Limnigrafo",
+      "lat": -13.805,
+      "lon": -70.468,
+      "altitud_msnm": 2510,
+      "variable": "Caudal medio diario (m3/s)"
+    },
+    {
+      "codigo": "MCH-RB-EST",
+      "nombre": "Estacion de Control Rio Blanco (Sitio de Presa)",
+      "entidad": "Proyecto MCH Puno / UNAP FIME",
+      "tipo": "Estacion Limnimetrica Flotador",
+      "lat": -13.809,
+      "lon": -70.471,
+      "altitud_msnm": 2420,
+      "variable": "Caudal diario aforado con molinete y correntometro"
+    }
+  ]
+}

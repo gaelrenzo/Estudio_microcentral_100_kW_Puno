@@ -1,0 +1,191 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32719"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          340915.2,
+          8472980.5,
+          2420.0
+        ]
+      },
+      "properties": {
+        "ID": "BOC-01",
+        "Elemento": "Bocatoma Tirolesa con Azud",
+        "Este_UTM": 340915.2,
+        "Norte_UTM": 8472980.5,
+        "Cota_msnm": 2420.0,
+        "Zona": "19S",
+        "Descripcion": "Captacion de fondo en cauce del Rio Blanco con rejilla de 1.80m y camara de derivacion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          340940.8,
+          8473020.1,
+          2418.5
+        ]
+      },
+      "properties": {
+        "ID": "DES-01",
+        "Elemento": "Desarenador de Doble Nave",
+        "Este_UTM": 340940.8,
+        "Norte_UTM": 8473020.1,
+        "Cota_msnm": 2418.5,
+        "Zona": "19S",
+        "Descripcion": "Estructura de sedimentacion de particulas d >= 0.20 mm con vertedero Sutro y purga"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          340960.0,
+          8473045.0,
+          2418.4
+        ]
+      },
+      "properties": {
+        "ID": "CAN-INI",
+        "Elemento": "Inicio Canal de Aduccion",
+        "Este_UTM": 340960.0,
+        "Norte_UTM": 8473045.0,
+        "Cota_msnm": 2418.4,
+        "Zona": "19S",
+        "Descripcion": "Canal rectangular de concreto cicleo f c=175 kg/cm2, b=0.50m, h=0.60m"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341100.4,
+          8473180.2,
+          2418.05
+        ]
+      },
+      "properties": {
+        "ID": "CAN-MED",
+        "Elemento": "Canal de Aduccion Progresiva 0+225",
+        "Este_UTM": 341100.4,
+        "Norte_UTM": 8473180.2,
+        "Cota_msnm": 2418.05,
+        "Zona": "19S",
+        "Descripcion": "Trazo a media ladera en roca fracturada con proteccion contra desprendimientos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341250.5,
+          8473310.8,
+          2417.8
+        ]
+      },
+      "properties": {
+        "ID": "CAM-CAR",
+        "Elemento": "Camara de Carga y Aliviadero",
+        "Este_UTM": 341250.5,
+        "Norte_UTM": 8473310.8,
+        "Cota_msnm": 2417.8,
+        "Zona": "19S",
+        "Descripcion": "Estructura de transicion con rejilla fina, compuerta de admision, aliviadero y tubo de ventilacion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341365.0,
+          8473480.0,
+          2360.3
+        ]
+      },
+      "properties": {
+        "ID": "TUB-FOR",
+        "Elemento": "Eje Tuberia Forzada (Penstock)",
+        "Este_UTM": 341365.0,
+        "Norte_UTM": 8473480.0,
+        "Cota_msnm": 2360.3,
+        "Zona": "19S",
+        "Descripcion": "Tuberia de acero al carbono ASTM A36 e=4.75mm a 6.35mm, D=250mm, Longitud 380m con 4 dados de anclaje"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341480.1,
+          8473650.4,
+          2302.8
+        ]
+      },
+      "properties": {
+        "ID": "CAS-MAQ",
+        "Elemento": "Casa de Maquinas",
+        "Este_UTM": 341480.1,
+        "Norte_UTM": 8473650.4,
+        "Cota_msnm": 2302.8,
+        "Zona": "19S",
+        "Descripcion": "Edificacion antisismica 8.5m x 6.0m albergando grupo turbina Pelton de 2 inyectores y generador 125 kVA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341495.0,
+          8473665.0,
+          2303.0
+        ]
+      },
+      "properties": {
+        "ID": "SUB-EST",
+        "Elemento": "Subestacion Elevadora 0.38/10 kV",
+        "Este_UTM": 341495.0,
+        "Norte_UTM": 8473665.0,
+        "Cota_msnm": 2303.0,
+        "Zona": "19S",
+        "Descripcion": "Transformador trifasico 125 kVA ONAN, seccionadores bajo carga y pararrayos polimericos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          341510.3,
+          8473675.8,
+          2301.5
+        ]
+      },
+      "properties": {
+        "ID": "DES-RES",
+        "Elemento": "Canal de Descarga y Restitucion",
+        "Este_UTM": 341510.3,
+        "Norte_UTM": 8473675.8,
+        "Cota_msnm": 2301.5,
+        "Zona": "19S",
+        "Descripcion": "Restitucion de caudales turbinados al cauce natural del Rio Blanco sin desvio perenne"
+      }
+    }
+  ]
+}
