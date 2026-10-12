@@ -38,15 +38,23 @@ Desktop.ini
 Thumbs.db
 .DS_Store
 
-# Archivos binarios pesados (> 10MB) generados y respaldados localmente
-05 Informe/*.pdf
+# Archivos auxiliares de compilación LaTeX
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.log
+*.tmp
+
+# Archivos de suites ofimáticas generados localmente
 05 Informe/*.docx
-06 Anexos/*.pdf
 06 Anexos/*.docx
 reports/*.pdf
 reports/*.png
-*.tmp
-*.log
 
 # Duplicados temporales de renderizado
 06 Anexos/*.png

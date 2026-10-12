@@ -7,6 +7,19 @@ y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.
 
 ---
 
+## [2.0.1] - 2026-10-12
+
+### Corregido (Fixed)
+- **Compilación LaTeX de Anexos (`06 Anexos/`):** Corrección de paquetes matemáticos (`amsmath`, `amssymb`) y definición de `\graphicspath{{../04 Mapas/}}` en las láminas de cartografía (`Anexo_A`), geodesia (`Anexo_F`) y desarrollo productivo (`Anexo_G`).
+
+### Añadido (Added)
+- **Entregables Finales Compilados en PDF:** Generación y control de versiones para los documentos oficiales de ingeniería:
+  - `05 Informe/Informe_Final_MCH_100kW_Puno.pdf` (42 páginas integrando memoria de diseño, fórmulas, tablas, cartografía satelital y planos).
+  - `06 Anexos/` (Anexos A, B, C, E, F y G completamente compilados).
+- **Filtros de compilación en `.gitignore`:** Exclusión automática de archivos temporales de LaTeX (`.aux`, `.out`, `.toc`, `.lof`, `.lot`, `.fls`, `.log`, etc.).
+
+---
+
 ## [2.0.0] - 2026-10-12
 
 ### Añadido (Added)
