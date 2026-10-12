@@ -1,0 +1,25 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="MCH Río Blanco 100 kW - Puno" version="3.28.0-Firenze">
+  <title>Estudio de Prefactibilidad Microcentral Hidroeléctrica Río Blanco 100 kW - Carabaya, Puno</title>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt>PROJCRS["WGS 84 / UTM zone 19S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433]],CONVERSION["UTM zone 19S",METHOD["Transverse Mercator"],PARAMETER["Latitude of natural origin",0],PARAMETER["Longitude of natural origin",-69],PARAMETER["Scale factor at natural origin",0.9996],PARAMETER["False easting",500000],PARAMETER["False northing",10000000],UNIT["metre",1]],CS[Cartesian,2],AXIS["(E)",east],AXIS["(N)",north],ORDER[1,2]]</wkt>
+      <proj4>+proj=utm +zone=19 +south +datum=WGS84 +units=m +no_defs</proj4>
+      <srsid>3169</srsid>
+      <srid>32719</srid>
+      <authid>EPSG:32719</authid>
+      <description>WGS 84 / UTM zone 19S</description>
+      <projectionacronym>utm</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer id="puntos_obras" name="01 - Obras Hidráulicas (Puntos)" source="./obras_hidraulicas_puntos.geojson" provider="ogr"/>
+    <layer-tree-layer id="trazos_obras" name="02 - Trazos Canal y Tubería" source="./trazo_canal_y_tuberia.geojson" provider="ogr"/>
+    <layer-tree-layer id="red_hidrica" name="03 - Red Hidrográfica Río Blanco" source="./red_hidrica_rios.geojson" provider="ogr"/>
+    <layer-tree-layer id="cuenca_mch" name="04 - Microcuenca de Aporte" source="./cuenca_aporte_rio_blanco.geojson" provider="ogr"/>
+    <layer-tree-layer id="dem_terreno" name="05 - Modelo Digital Elevación DEM" source="../02 Datos/modelo_elevacion_digital_dem_mch.asc" provider="gdal"/>
+  </layer-tree-group>
+</qgis>

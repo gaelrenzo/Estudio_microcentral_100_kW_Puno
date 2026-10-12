@@ -1,0 +1,111 @@
+{
+  "type": "FeatureCollection",
+  "name": "red_hidrica_rios",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32719"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Nombre": "R\u00edo Blanco (Cauce Principal)",
+        "Orden_Strahler": 3,
+        "Longitud_m": 8200
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            343200,
+            8471500
+          ],
+          [
+            342500,
+            8472100
+          ],
+          [
+            341800,
+            8472500
+          ],
+          [
+            340915,
+            8472980
+          ],
+          [
+            341200,
+            8473400
+          ],
+          [
+            341480,
+            8473650
+          ],
+          [
+            341700,
+            8474200
+          ],
+          [
+            342200,
+            8475500
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nombre": "Quebrada Marcunuyo",
+        "Orden_Strahler": 2,
+        "Longitud_m": 3400
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            344000,
+            8473800
+          ],
+          [
+            343100,
+            8473600
+          ],
+          [
+            342200,
+            8473450
+          ],
+          [
+            341480,
+            8473650
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nombre": "Quebrada Tupuri",
+        "Orden_Strahler": 1,
+        "Longitud_m": 2100
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            340200,
+            8471800
+          ],
+          [
+            340600,
+            8472400
+          ],
+          [
+            340915,
+            8472980
+          ]
+        ]
+      }
+    }
+  ]
+}

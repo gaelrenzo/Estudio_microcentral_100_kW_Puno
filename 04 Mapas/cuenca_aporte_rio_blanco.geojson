@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "name": "cuenca_aporte_rio_blanco",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32719"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Nombre": "Microcuenca R\u00edo Blanco",
+        "Area_km2": 28.45,
+        "Perimetro_km": 24.12,
+        "Elev_Min_msnm": 2300,
+        "Elev_Max_msnm": 4150,
+        "Elev_Media_msnm": 3180,
+        "Distrito": "Ollachea",
+        "Provincia": "Carabaya",
+        "Departamento": "Puno"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              339500,
+              8472000
+            ],
+            [
+              339800,
+              8473500
+            ],
+            [
+              340500,
+              8475000
+            ],
+            [
+              342000,
+              8476200
+            ],
+            [
+              343800,
+              8475800
+            ],
+            [
+              344500,
+              8474200
+            ],
+            [
+              344100,
+              8472500
+            ],
+            [
+              343000,
+              8471200
+            ],
+            [
+              341200,
+              8470800
+            ],
+            [
+              340000,
+              8471200
+            ],
+            [
+              339500,
+              8472000
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

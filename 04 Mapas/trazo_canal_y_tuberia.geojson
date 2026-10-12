@@ -1,0 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "name": "trazo_canal_y_tuberia",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::32719"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Componente": "Canal de Aducci\u00f3n",
+        "Longitud_m": 450,
+        "Material": "Concreto Cicl\u00f3peo",
+        "Seccion": "Rectangular 0.50m x 0.60m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            340915.2,
+            8472980.5
+          ],
+          [
+            340940.8,
+            8473020.1
+          ],
+          [
+            340960.0,
+            8473045.0
+          ],
+          [
+            341050.0,
+            8473130.0
+          ],
+          [
+            341100.4,
+            8473180.2
+          ],
+          [
+            341180.0,
+            8473250.0
+          ],
+          [
+            341250.5,
+            8473310.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Componente": "Tuber\u00eda Forzada (Penstock)",
+        "Longitud_m": 380,
+        "Material": "Acero ASTM A36",
+        "Diametro_mm": 250
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            341250.5,
+            8473310.8
+          ],
+          [
+            341310.0,
+            8473400.0
+          ],
+          [
+            341365.0,
+            8473480.0
+          ],
+          [
+            341420.0,
+            8473560.0
+          ],
+          [
+            341480.1,
+            8473650.4
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Componente": "L\u00ednea de Media Tensi\u00f3n 10 kV",
+        "Longitud_m": 1850,
+        "Tension_kV": 10.0,
+        "Conductor": "AAAC 35 mm2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            341495.0,
+            8473665.0
+          ],
+          [
+            341750.0,
+            8473950.0
+          ],
+          [
+            342100.0,
+            8474400.0
+          ],
+          [
+            342650.0,
+            8474950.0
+          ],
+          [
+            343100.0,
+            8475300.0
+          ]
+        ]
+      }
+    }
+  ]
+}
