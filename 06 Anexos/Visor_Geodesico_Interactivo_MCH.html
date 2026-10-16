@@ -46,14 +46,14 @@
             <li>Caudal Nominal: <strong>125 L/s (0.125 m³/s)</strong> (Persistencia 78%)</li>
             <li>Caudal Ecológico (ANA): <strong>30 L/s</strong> (Inalterable)</li>
             <li>Caída Bruta / Neta: <strong>115.00 m / 106.18 m</strong></li>
-            <li>Potencia Neta: <strong>100 kW</strong> (672.77 MWh/año)</li>
+            <li>Potencia Neta: <strong>100 kW</strong> (862.92 MWh/año (escenario del modelo, no energía verificada))</li>
             <li>Turbina: <strong>Pelton 2 Inyectores (1,200 RPM, 60 Hz)</strong></li>
-            <li>Generador: <strong>Síncrono Brushless 125 kVA (0.38 kV)</strong></li>
+            <li>Generador conceptual: <strong>125 kVA, 400/230 V (por confirmar)</strong></li>
         </ul>
         <hr style="border: 0; border-top: 1px solid #ddd; margin: 8px 0;">
         <p style="font-size: 11.5px; color: #555;">
             <strong>Datum Oficial:</strong> WGS-84 / UTM Zona 19S (EPSG:32719)<br>
-            <strong>Red Geodésica:</strong> Orden "C" certificada IGN (Base PUNO-01)
+            <strong>Red Geodésica:</strong> referencial; sin certificación IGN ni levantamiento de campo
         </p>
     </div>
 
@@ -138,7 +138,7 @@
             {nom: "Desarenador Doble Nave (DES-01)", lat: -13.807999, lon: -70.471540, cota: 2418.5, desc: "Estructura de decantación de 2 naves (8.0m x 0.70m) para partículas d >= 0.20 mm con vertedero proporcional Sutro y purga rápida."},
             {nom: "Cámara de Carga (Forebay) (CAM-CAR)", lat: -13.805373, lon: -70.468675, cota: 2417.8, desc: "Tanque de concreto armado de 4x3x2.2m (Volumen 22.5 m³, 3 min regulación), aliviadero lateral de demasías y tubo de ventilación anti-vacío."},
             {nom: "Casa de Máquinas (CAS-MAQ)", lat: -13.802333, lon: -70.466514, cota: 2302.8, desc: "Edificación de 8.5x6m albergando turbina Pelton de 2 inyectores (114.6 kW mecánicos) y alternador síncrono brushless 125 kVA a 1200 RPM."},
-            {nom: "Subestación Elevadora (SUB-EST)", lat: -13.802200, lon: -70.466375, cota: 2303.0, desc: "Transformador trifásico 125 kVA 0.38/10 kV ONAN Dyn5, seccionadores cut-out 24kV, pararrayos poliméricos y malla de tierra IEEE 80 (R=3.82 Ω)."},
+            {nom: "Subestación Elevadora (SUB-EST)", lat: -13.802200, lon: -70.466375, cota: 2303.0, desc: "Transformador conceptual 125 kVA 0.4/10 kV; confirmar con distribuidora, seccionadores cut-out 24kV, pararrayos poliméricos y malla de tierra IEEE 80 (R=3.82 Ω)."},
             {nom: "Canal de Restitución al Río (DES-RES)", lat: -13.802100, lon: -70.466230, cota: 2301.5, desc: "Retorno inmediato de los 125 L/s turbinados al cauce del Río Blanco sin desvío perenne ni afectación ecológica."}
         ];
 
@@ -181,7 +181,7 @@
         var overlayMaps = {
             "Obras Civiles e Hidráulicas": obrasGroup,
             "Trazo Conducción y Penstock": lineasGroup,
-            "Red Geodésica de Control (IGN)": geoGroup,
+            "Referencias geográficas del repositorio (sin certificación)": geoGroup,
             "Usos Productivos y Electrificación": usosGroup
         };
         L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);

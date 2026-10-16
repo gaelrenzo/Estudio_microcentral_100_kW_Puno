@@ -142,7 +142,7 @@ def main():
         capex=245800.0,
         opex_pct=0.03,
         potencia_kw=100.0,
-        factor_planta=0.768,
+        factor_planta=balance_energia["factor_planta"],
         tarifa=0.075,
         horizonte=25,
         tasa_descuento=0.10

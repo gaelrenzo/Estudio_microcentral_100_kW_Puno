@@ -239,12 +239,12 @@ def generar_informe_pdf(resultados: Dict[str, Any], ruta_salida: str) -> str:
         [Paragraph("Salto Neto Efectivo (Hn)", style_tabla_cell), Paragraph(f"{hidro.get('tuberia', {}).get('salto_neto_m', 101.67):.2f}", style_tabla_cell_center), Paragraph("m.c.a. (Pérdidas totales 11.6%)", style_tabla_cell)],
         [Paragraph("Potencia Neta Entregada a Red", style_tabla_cell), Paragraph(f"{p_red:.2f}", style_tabla_cell_center), Paragraph("kW (~100 kW nominales)", style_tabla_cell)],
         [Paragraph("Tecnología de Turbina", style_tabla_cell), Paragraph("Pelton (2 inyectores)", style_tabla_cell_center), Paragraph("Acción, Ns = 12.1 rpm, rodete D=343 mm", style_tabla_cell)],
-        [Paragraph("Generación Neta Anual Esperada", style_tabla_cell), Paragraph(f"{econo.get('generacion_anual_mwh', 672.77):,.2f}", style_tabla_cell_center), Paragraph("MWh/año (Factor de planta 76.8%)", style_tabla_cell)],
+        [Paragraph("Generación Neta Anual Esperada", style_tabla_cell), Paragraph(f"{econo.get('generacion_anual_mwh', 862.92):,.2f}", style_tabla_cell_center), Paragraph("MWh/año (escenario modelado; FP sujeto a validación)", style_tabla_cell)],
         [Paragraph("Inversión Inicial (CAPEX)", style_tabla_cell), Paragraph(f"${econo.get('capex_usd', 245800):,.2f}", style_tabla_cell_center), Paragraph("USD (Ratio: $2,458 USD/kW)", style_tabla_cell)],
         [Paragraph("Valor Actual Neto (VAN @ 10%)", style_tabla_cell), Paragraph(f"${econo.get('van_usd', 145155):,.2f}", style_tabla_cell_center), Paragraph("USD (Rentabilidad positiva)", style_tabla_cell)],
         [Paragraph("Tasa Interna de Retorno (TIR)", style_tabla_cell), Paragraph(f"{econo.get('tir_pct', 16.24):.2f}%", style_tabla_cell_center), Paragraph("> COK del 10%", style_tabla_cell)],
         [Paragraph("Costo Nivelado de Energía (LCOE)", style_tabla_cell), Paragraph(f"${econo.get('lcoe_usd_mwh', 45.40):.2f}", style_tabla_cell_center), Paragraph("USD/MWh ($0.0454 USD/kWh)", style_tabla_cell)],
-        [Paragraph("Período de Recuperación (Payback)", style_tabla_cell), Paragraph(f"{econo.get('payback_anios', 5.71):.2f}", style_tabla_cell_center), Paragraph("Años", style_tabla_cell)]
+        [Paragraph("Período de Recuperación (Payback)", style_tabla_cell), Paragraph(f"{econo.get('payback_anios', 4.29):.2f}", style_tabla_cell_center), Paragraph("Años", style_tabla_cell)]
     ]
     t_resumen = Table(resumen_data, colWidths=[2.6 * inch, 1.8 * inch, 2.4 * inch])
     t_resumen.setStyle(TableStyle([
@@ -452,15 +452,15 @@ def generar_informe_pdf(resultados: Dict[str, Any], ruta_salida: str) -> str:
 
     econ_data = [
         [Paragraph("Indicador Financiero", style_tabla_header), Paragraph("Valor Obtenido", style_tabla_header), Paragraph("Criterio de Aceptación", style_tabla_header), Paragraph("Veredicto", style_tabla_header)],
-        [Paragraph("Inversión Inicial (CAPEX)", style_tabla_cell), Paragraph(f"${econo.get('capex_usd', 245800):,.2f} USD", style_tabla_cell_center), Paragraph("Ratio de mercado < $3,000 USD/kW", style_tabla_cell), Paragraph("Excelente", style_tabla_cell_center)],
+        [Paragraph("Inversión Inicial (CAPEX)", style_tabla_cell), Paragraph(f"${econo.get('capex_usd', 245800):,.2f} USD", style_tabla_cell_center), Paragraph("Ratio de mercado < $3,000 USD/kW", style_tabla_cell), Paragraph("Escenario", style_tabla_cell_center)],
         [Paragraph("OPEX Anual (3% CAPEX)", style_tabla_cell), Paragraph(f"${econo.get('opex_anual_usd', 7374):,.2f} USD/año", style_tabla_cell_center), Paragraph("Estándar internacional micro-hidro", style_tabla_cell), Paragraph("Aceptable", style_tabla_cell_center)],
         [Paragraph("Ingresos Anuales Brutos", style_tabla_cell), Paragraph(f"${econo.get('ingreso_anual_usd', 50458):,.2f} USD/año", style_tabla_cell_center), Paragraph("Venta neta @ $0.075 USD/kWh", style_tabla_cell), Paragraph("Firme", style_tabla_cell_center)],
         [Paragraph("Flujo de Caja Operativo Neto", style_tabla_cell), Paragraph(f"${econo.get('flujo_neto_anual_usd', 43084):,.2f} USD/año", style_tabla_cell_center), Paragraph("Ingresos menos OPEX anual", style_tabla_cell), Paragraph("Favorable", style_tabla_cell_center)],
         [Paragraph("Valor Actual Neto (VAN @ 10%)", style_tabla_cell), Paragraph(f"${econo.get('van_usd', 145155):,.2f} USD", style_tabla_cell_center), Paragraph("VAN > 0", style_tabla_cell), Paragraph("ALTAMENTE VIABLE", style_tabla_cell_center)],
         [Paragraph("Tasa Interna de Retorno (TIR)", style_tabla_cell), Paragraph(f"{econo.get('tir_pct', 16.24):.2f} %", style_tabla_cell_center), Paragraph("TIR > COK (10%)", style_tabla_cell), Paragraph("RENTABLE", style_tabla_cell_center)],
-        [Paragraph("Período de Recuperación (Payback)", style_tabla_cell), Paragraph(f"{econo.get('payback_anios', 5.71):.2f} Años", style_tabla_cell_center), Paragraph("< 8 años para proyectos RER", style_tabla_cell), Paragraph("Excelente", style_tabla_cell_center)],
+        [Paragraph("Período de Recuperación (Payback)", style_tabla_cell), Paragraph(f"{econo.get('payback_anios', 4.29):.2f} Años", style_tabla_cell_center), Paragraph("< 8 años para proyectos RER", style_tabla_cell), Paragraph("Escenario", style_tabla_cell_center)],
         [Paragraph("Costo Nivelado (LCOE)", style_tabla_cell), Paragraph(f"${econo.get('lcoe_usd_mwh', 45.40):.2f} USD/MWh", style_tabla_cell_center), Paragraph("Muy competitivo vs diésel (> $250)", style_tabla_cell), Paragraph("Competitivo", style_tabla_cell_center)],
-        [Paragraph("Relación Beneficio / Costo (B/C)", style_tabla_cell), Paragraph(f"{econo.get('relacion_beneficio_costo', 1.59):.2f}", style_tabla_cell_center), Paragraph("B/C > 1.20", style_tabla_cell), Paragraph("Robusto", style_tabla_cell_center)]
+        [Paragraph("Relación Beneficio / Costo (B/C)", style_tabla_cell), Paragraph(f"{econo.get('relacion_beneficio_costo', 1.88):.2f}", style_tabla_cell_center), Paragraph("B/C de escenario", style_tabla_cell), Paragraph("No concluyente", style_tabla_cell_center)]
     ]
     t_econ = Table(econ_data, colWidths=[2.2 * inch, 1.6 * inch, 1.8 * inch, 1.2 * inch])
     t_econ.setStyle(TableStyle([
@@ -480,7 +480,7 @@ def generar_informe_pdf(resultados: Dict[str, Any], ruta_salida: str) -> str:
     story.append(HRFlowable(width="100%", thickness=1, color=azul_secundario, spaceAfter=8))
 
     conclusiones = [
-        "<b>Factibilidad Técnica y Energética:</b> El proyecto es plenamente viable con un aprovechamiento de 125 L/s y 115 m de salto bruto, logrando una potencia neta de 99.8 kW y un factor de planta sostenido del 76.8% (672.8 MWh/año).",
+        "<b>Prefactibilidad técnica y energética:</b> El modelo calcula una alternativa de 100 kW con 125 L/s y 115 m de salto bruto; los datos de caudal, las ubicaciones y las condiciones de diseño requieren validación independiente. La energía calculada no acredita viabilidad.",
         "<b>Garantía Ambiental y Caudal Ecológico:</b> Se cumple estrictamente con la Ley de Recursos Hídricos (Ley 29338), asegurando un caudal ecológico continuo de 30 L/s en la bocatoma que preserva el ecosistema acuático de la cuenca alta.",
         "<b>Seguridad ante Transitorios:</b> La combinación de deflector rápido e inyectores servoasistidos de cierre lento (tc = 4.0 s) contiene la sobrepresión por ariete en 49.3 m, lo que permite adoptar tubería de acero estándar comercial de 10\" con espesores de 4.75 mm y 6.35 mm sin riesgo de colapso ni fatiga.",
         "<b>Solidez Financiera:</b> Los indicadores económicos (VAN de $145,155 USD, TIR de 16.24% y Payback de 5.7 años) ratifican la alta conveniencia de la inversión frente a alternativas térmicas aisladas.",

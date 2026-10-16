@@ -1,5 +1,6 @@
 {
   "proyecto": "Microcentral Hidroelectrica Rio Blanco 100 kW - Puno",
+  "estado_validacion": "REFERENCIAL: metadatos y series sin documentos primarios de descarga, aforos, curvas de gasto o control de calidad adjuntos; verificar antes de tratarlos como datos oficiales o medidos.",
   "sistema_referencia": "WGS 84 / UTM Zona 19S (EPSG:32719)",
   "cuenca_hidrografica": "Cuenca del Rio Inambari - Subcuenca Rio San Gaban",
   "estaciones_analizadas": [

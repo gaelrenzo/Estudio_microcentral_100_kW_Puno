@@ -66,7 +66,7 @@ html_content = """<!DOCTYPE html>
         <hr style="border: 0; border-top: 1px solid #ddd; margin: 8px 0;">
         <p style="font-size: 11.5px; color: #555;">
             <strong>Datum Oficial:</strong> WGS-84 / UTM Zona 19S (EPSG:32719)<br>
-            <strong>Red Geodésica:</strong> Orden "C" certificada IGN (Base PUNO-01)
+            <strong>Red Geodésica:</strong> referencial, sin levantamiento GNSS ni certificación IGN
         </p>
     </div>
 

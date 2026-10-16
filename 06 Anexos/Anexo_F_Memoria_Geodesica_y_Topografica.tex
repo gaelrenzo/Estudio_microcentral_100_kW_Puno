@@ -1,101 +1,19 @@
-\documentclass[11pt,a4paper]{report}
+\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{geometry}
-\geometry{top=2.2cm,bottom=2.2cm,left=2.5cm,right=2.5cm}
-\usepackage{fancyhdr}
-\usepackage{graphicx}
-\graphicspath{{../04 Mapas/}}
-\usepackage{booktabs}
-\usepackage{tabularx}
+\usepackage[margin=2.5cm]{geometry}
 \usepackage{xcolor}
-\usepackage{float}
-\usepackage{titlesec}
-\usepackage{amsmath,amssymb}
-
-\definecolor{navyblue}{RGB}{31,78,121}
-\definecolor{darkslate}{RGB}{47,85,151}
-
-\titleformat{\chapter}[display]
-  {\normalfont\bfseries\color{navyblue}}
-  {\filleft\Huge\textbf{\chaptertitlename\ \thechapter}}
-  {1ex}
-  {\titlerule\vspace{1ex}\LARGE}
-  [\vspace{1ex}\titlerule]
-
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\small\textcolor{darkslate}{Anexo F: Memoria Geodésica y Fichas IGN}}
-\lhead{\small\textcolor{darkslate}{MCH Río Blanco 100 kW - Puno}}
-\rfoot{\small Página \thepage}
-\lfoot{\small UNAP - FIME / Consultoría Geodésica}
-
+\definecolor{navy}{RGB}{31,78,121}
 \begin{document}
-
-\begin{titlepage}
 \begin{center}
-    \vspace*{2cm}
-    {\Large\bfseries UNIVERSIDAD NACIONAL DEL ALTIPLANO PUNO}\\[0.5em]
-    {\large FACULTAD DE INGENIERÍA MECÁNICA ELÉCTRICA}\\[2.5cm]
-
-    \rule{\linewidth}{2pt}\\[0.4cm]
-    {\huge\bfseries\color{navyblue} ANEXO F: MEMORIA TÉCNICA GEODÉSICA, RED DE CONTROL Y FICHAS OFICIALES IGN}\\[0.4cm]
-    {\Large\bfseries PROYECTO MICROCENTRAL HIDROELÉCTRICA RÍO BLANCO 100 kW}\\[0.4cm]
-    {\large Red Geodésica Geocéntrica Nacional (REGGEN) - Orden ``C''}\\[0.4cm]
-    \rule{\linewidth}{2pt}\\[2.5cm]
-
-    \textbf{Contenido Técnico:}\\
-    Fundamentación Geodésica WGS-84 / UTM Zona 19 Sur\\
-    Metodología GNSS Estático Diferencial Post-Procesado\\
-    Fichas Técnicas Oficiales de Monumentación con Placa de Bronce (IGN)\\
-    Elipsoide GRS80, Ondulación EGM2008 y Factores de Escala Combinados\\[2cm]
-
-    \vfill
-    {\large Puno -- Perú}\\[0.3em]
-    {\normalsize Setiembre 2024 / 2026}
+{\Large\bfseries\color{navy} ANEXO F: PROPUESTA DE CONTROL GEODÉSICO Y TOPOGRÁFICO}\\[0.5em]
+{\large MCH Río Blanco — 100 kW — Prefactibilidad}\\[0.5em]
+{\normalsize Puno, Perú — 16 de octubre de 2026}
 \end{center}
-\end{titlepage}
-
-\chapter{Fundamentación Geodésica y Red de Control}
-\section{Marco de Referencia Geodésico Nacional}
-La totalidad de los trabajos geodésicos y topográficos de la Microcentral Hidroeléctrica Río Blanco 100 kW se sustentan en las normas técnicas del Instituto Geográfico Nacional (IGN) para levantamientos geodésicos mediante tecnología GNSS:
-\begin{itemize}
-    \item \textbf{Sistema Geodésico de Referencia:} WGS-84 (World Geodetic System 1984), elipsoide GRS80.
-    \item \textbf{Proyección Cartográfica:} Universal Transversa de Mercator (UTM), Zona 19 Sur.
-    \item \textbf{Meridiano Central:} $69^\circ\text{ W}$, Falso Este = $500,000.000\text{ m}$, Falso Norte = $10,000,000.000\text{ m}$.
-    \item \textbf{Modelo Geoidal:} Earth Gravitational Model 2008 (EGM2008), determinándose una ondulación geoidal de $N = +38.45\text{ m}$.
-    \item \textbf{Relación entre Alturas:} $h = H + N \implies H = h - 38.45\text{ m}$, donde $h$ es la altura elipsoidal obtenida por GNSS y $H$ es la elevación ortométrica sobre el nivel medio del mar.
-    \item \textbf{Factor de Escala Combinado:} $K = 0.999234$, integrando la reducción al elipsoide y la proyección conforme.
-\end{itemize}
-
-\section{Estación Base y Metodología de Rastreo}
-Se utilizó como estación base de amarre geodésico el vértice permanente PUNO-01 de la Red Geodésica Geocéntrica Nacional (REGGEN). En los vértices del proyecto (HG-01, HG-02, HG-03) se efectuaron observaciones estáticas diferenciales continuas de 2 horas por punto con receptores Trimble R10 de doble frecuencia (L1/L2/L5), lográndose precisiones relativas horizontales superiores a $1 : 100,000$ (Orden ``C'' del IGN) con errores de cierre tridimensionales inferiores a 3 mm.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{Mapa_06_Red_Control_Geodesico_IGN.png}
-\caption{Esquema de la Red Geodésica de Control de Orden ``C'' y Líneas Base GNSS.}
-\end{figure}
-
-\chapter{Fichas Técnicas Oficiales de Monumentación Geodésica}
-Los tres vértices principales del proyecto fueron monumentados mediante bloques de concreto ciclópeo ($f'c = 210\text{ kg/cm}^2$) de $0.40\text{ m} \times 0.40\text{ m} \times 0.60\text{ m}$ empotrados en roca madre competente, con placa circular de bronce de 75 mm de diámetro grabada con cruz de colimación y código institucional.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.92\linewidth]{Ficha_Geodesica_HG01.png}
-\caption{Ficha Geodésica Oficial IGN: Vértice HG-01 (Bocatoma y Azud de Derivación).}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.92\linewidth]{Ficha_Geodesica_HG02.png}
-\caption{Ficha Geodésica Oficial IGN: Vértice HG-02 (Cámara de Carga y Aliviadero).}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.92\linewidth]{Ficha_Geodesica_HG03.png}
-\caption{Ficha Geodésica Oficial IGN: Vértice HG-03 (Casa de Máquinas y Subestación).}
-\end{figure}
-
+\section*{Estado del levantamiento}
+Este anexo no acredita trabajos GNSS, monumentación, cotas, precisión ni certificación del Instituto Geográfico Nacional. No se adjuntan observaciones crudas, libretas, actas, certificados de estación base, informes de ajuste ni fichas oficiales. Los puntos y coordenadas incluidos en otros archivos son referencias digitales provisionales y no deben usarse para replanteo.
+\section*{Trabajo requerido para la siguiente etapa}
+Un profesional competente deberá: (1) confirmar el marco horizontal y vertical aplicable y su transformación; (2) definir y documentar vértices de control y su vínculo a estaciones oficiales; (3) levantar captación, conducción, cámara de carga, tubería, casa de máquinas, accesos y cruce de cauce; (4) registrar datos crudos, equipos, calibraciones, tiempos de observación, alturas de antena y condiciones; (5) ajustar la red y reportar cierres, incertidumbre y control independiente; (6) contrastar cotas y distancias con nivelación y observaciones redundantes; y (7) entregar planos, fichas, archivos digitales y metadatos con revisión profesional.
+\section*{Parámetros todavía por validar}
+La zona UTM, datum, época, modelo geoidal, conversión a elevación ortométrica, escala y tolerancias deben definirse de acuerdo con el levantamiento y la cartografía oficial. No se adoptan aquí ondulación geoidal, factor combinado ni orden geodésico como resultados medidos.
 \end{document}

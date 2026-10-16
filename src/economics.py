@@ -132,7 +132,7 @@ def evaluacion_completa(
         capex: Inversión inicial total en USD (ej. 245,800 USD).
         opex_pct: Porcentaje anual de OPEX sobre el CAPEX (ej. 0.03 para 3%).
         potencia_kw: Potencia nominal de la central en kW (ej. 100 kW).
-        factor_planta: Factor de planta esperado en decimal (ej. 0.768 para 76.8%).
+        factor_planta: Factor de planta esperado en decimal (ej. 0.80 para 80%).
         tarifa: Tarifa de venta de energía en USD/kWh (ej. 0.075 USD/kWh).
         horizonte: Horizonte temporal de evaluación en años (ej. 25 años).
         tasa_descuento: Tasa de descuento de costo de oportunidad de capital (ej. 0.10).
@@ -154,7 +154,10 @@ def evaluacion_completa(
     tir_proyecto = tir(flujos)
     payback_proyecto = payback(capex, flujo_neto_anual)
     lcoe_proyecto = lcoe(capex, opex_anual, generacion_kwh, horizonte, tasa_descuento)
-    relacion_bc = round((van_proyecto + capex) / capex, 2)
+    factor_descuento = sum(1.0 / ((1.0 + tasa_descuento) ** t) for t in range(1, horizonte + 1))
+    valor_actual_beneficios = ingreso_anual * factor_descuento
+    valor_actual_costos = capex + opex_anual * factor_descuento
+    relacion_bc = round(valor_actual_beneficios / valor_actual_costos, 2)
 
     return {
         "capex_usd": round(capex, 2),
