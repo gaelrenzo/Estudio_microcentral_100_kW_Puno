@@ -17,6 +17,15 @@
 9. `Presentacion_Directiva_MCH_Rio_Blanco.pdf/.pptx`: presentación ejecutiva de 10 diapositivas, lista para exponer y editable.
 10. `TDR_Estudios_Gate_0.pdf/.docx` y `Decision_Gate_0.pdf/.docx`: versiones de lectura y editables para cotizar y revisar con el ingeniero.
 
+## Expediente académico por capítulos
+
+- `Capitulos_I_II_MCH_Rio_Blanco.pdf/.docx`: Capítulo I, Memoria Descriptiva; Capítulo II, Cálculos Justificativos.
+- `ESTRUCTURA_EXPEDIENTE_MCH.pdf/.docx/.md`: índice adaptado al formato de expediente con los capítulos I–XI y referencias a los anexos disponibles. Las partes pendientes de estudios de campo se identifican como tales.
+- `Presentacion_Academica_MCH_Rio_Blanco_100kW.pptx`: exposición académica de 13 diapositivas basada en la memoria.
+- `GUIA_CAPITULOS_Y_GUION.md`: temas y guion oral para la sustentación.
+
+El formato toma como referencia expedientes académicos de instalaciones eléctricas, adaptando la secuencia a una microcentral hidroeléctrica. El contenido permanece en prefactibilidad; el índice no convierte los planos ni cálculos preliminares en documentos constructivos.
+
 ## Reproducir los cálculos del escenario
 
 Desde esta carpeta, con Python instalado:
