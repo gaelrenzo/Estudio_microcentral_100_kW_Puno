@@ -19,6 +19,7 @@
 
 ## Expediente académico por capítulos
 
+- `Informe_Expediente_Completo_MCH_Rio_Blanco_100kW.pdf/.tex`: expediente amplio de 65 páginas; incluye capítulos I–XI, matriz de revisiones, tablas de cálculos y presupuesto APU, y anexos disponibles. Cada capítulo comienza en hoja nueva.
 - `Capitulos_I_II_MCH_Rio_Blanco.pdf/.docx`: Capítulo I, Memoria Descriptiva; Capítulo II, Cálculos Justificativos.
 - `ESTRUCTURA_EXPEDIENTE_MCH.pdf/.docx/.md`: índice adaptado al formato de expediente con los capítulos I–XI y referencias a los anexos disponibles. Las partes pendientes de estudios de campo se identifican como tales.
 - `Presentacion_Academica_MCH_Rio_Blanco_100kW.pptx`: exposición académica de 13 diapositivas basada en la memoria.

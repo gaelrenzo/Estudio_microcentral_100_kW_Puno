@@ -19,6 +19,8 @@
 
 > **Alcance:** este repositorio no constituye un expediente definitivo ni acredita mediciones de campo, disponibilidad hídrica, licencia de agua, viabilidad ambiental, conexión eléctrica, costos cotizados o rentabilidad bancaria. Consulta [ESTADO_PREFACTIBILIDAD.md](ESTADO_PREFACTIBILIDAD.md) para las discrepancias y validaciones pendientes.
 
+La versión académica extensa del expediente está en [PDF](07%20Entrega%20para%20Ingeniero/Informe_Expediente_Completo_MCH_Rio_Blanco_100kW.pdf), con su [fuente LaTeX](07%20Entrega%20para%20Ingeniero/Informe_Expediente_Completo_MCH_Rio_Blanco_100kW.tex) y guía en [README de entrega](07%20Entrega%20para%20Ingeniero/README_ENTREGA.md).
+
 El repositorio contiene módulos y documentos conceptuales; sus salidas deben tratarse como escenarios de prefactibilidad, no como verificaciones de campo:
 1. **Análisis Hidrológico:** Curva de Duración de Caudales (CDC) con distribución de Weibull sobre series diarias (2014-2023), determinando persistencia $Q_{95} = 0.126\text{ m}^3\text{/s}$ y preservación de caudal ecológico ($Q_{\text{eco}} = 30\text{ L/s}$).
 2. **Dimensionamiento Hidráulico y Civil:** Canal de aducción rectangular ($L=450\text{ m}$) mediante Manning por Newton-Raphson, cámara de carga con criterio de sumergencia de Gordon, y tubería forzada de acero ASTM A36 ($D=250\text{ mm}$, $L=380\text{ m}$) según Fahlbusch y Darcy-Weisbach / Swamee-Jain.
